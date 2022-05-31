@@ -28,11 +28,12 @@ public class MemoriaMejora {
         for (i=0; i < leng; i++) {
             try {
                 this.salida += "a";
-                
+                 System.out.println(salida);
             } catch (OutOfMemoryError e) {
                 e.printStackTrace();
                 break;
             }
+           
         }
         this.salida = tempOOM;
         
