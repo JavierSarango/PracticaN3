@@ -1,21 +1,20 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package practican3;
-
-import java.util.Scanner;
+package ClaseOriginal;
 
 /**
  *
  * @author Gigabyte
  */
-public class Memoria {
+import java.util.Scanner;
 
-    /**
-     *
-     * @author darkangel
-     */
+/**
+ *
+ * @author darkangel
+ */
+public class Memoria {
 
     public final static int OVERFLOW = 200000000;
     private String salida;
@@ -29,16 +28,13 @@ public class Memoria {
             i++;
             try {
                 this.salida += "a";
-                
             } catch (OutOfMemoryError e) {
                 e.printStackTrace();
                 break;
+
             }
-
         }
-        this.salida = tempOOM;
-        
-
+        this.salida = tempOOM.toString();
     }
 
     public String getOom() {
